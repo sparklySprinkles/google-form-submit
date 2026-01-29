@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Google Form Submit</title>
+</head>
+<body>
+
+  <h2>Example Form</h2>
+
+  <form 
+    action="https://docs.google.com/forms/d/e/1FAIpQLSfTz-7MYNz6lFEjj7EeKxXSVFQf687MFGdES2S9wygUuCRnnQ/formResponse"
+    method="POST"
+    target="hidden_iframe"
+  >
+    <label>
+      Color<br>
+      <input type="text" name="entry.1584025316" required>
+    </label>
+    <br><br>
+
+    <label>
+      Animal:<br>
+      <input type="text" name="entry.110243002" required>
+    </label>
+    <br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- Prevent redirect -->
+  <iframe name="hidden_iframe" style="display:none;"></iframe>
+
+</body>
+</html>
